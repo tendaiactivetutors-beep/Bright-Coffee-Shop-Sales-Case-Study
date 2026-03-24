@@ -157,8 +157,12 @@ This project demonstrates how raw transactional data can be transformed into mea
 By leveraging SQL and data visualization, the business can better understand performance, optimize operations, and drive revenue growth.
 
 ---
-
-## 👤 Author
-
+📩 Contact
+Want to collaborate or have feedback?
+## Aurther
 Tendai Shumba
+📧 Email: tendai.activetutors@gmail.com 🔗 LinkedIn: https://www.linkedin.com/in/tendai-shumba-115383129/
+ 
+
+
 
