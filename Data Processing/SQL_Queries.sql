@@ -194,6 +194,24 @@ SELECT
 FROM `workspace`.`default`.`coffee_case_study`
 GROUP BY transaction_date, Day_name, Month_name;
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---Time of day store performs best
+SELECT 
+    CASE 
+        WHEN EXTRACT(HOUR FROM transaction_time) BETWEEN 6 AND 11 THEN 'Morning'
+        WHEN EXTRACT(HOUR FROM transaction_time) BETWEEN 12 AND 16 THEN 'Afternoon'
+        WHEN EXTRACT(HOUR FROM transaction_time) BETWEEN 17 AND 20 THEN 'Evening'
+        ELSE 'Night'
+    END AS time_of_day,
+
+    COUNT(transaction_id) AS total_transactions,
+    SUM(transaction_qty) AS total_units_sold,
+    SUM(transaction_qty * unit_price) AS total_revenue
+
+FROM `workspace`.`default`.`coffee_case_study`
+GROUP BY time_of_day
+ORDER BY total_revenue DESC;
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ---10. Combining functions to get a clean and enhanced data set
