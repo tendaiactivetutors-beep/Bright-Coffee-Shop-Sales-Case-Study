@@ -109,10 +109,10 @@ ORDER BY revenue DESC;
 --Calculating Quantity Sold by Product Category
 SELECT 
     product_category,
-    SUM(transaction_qty) AS total_quantity
+    SUM(transaction_qty) AS total_units_sold
 FROM `workspace`.`default`.`coffee_case_study`
 GROUP BY product_category
-ORDER BY total_quantity DESC;
+ORDER BY total_units_sold DESC;
 
 ---- Calculating Total units sold by product type or detail
 SELECT 
