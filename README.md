@@ -156,6 +156,10 @@ This project demonstrates how raw transactional data can be transformed into mea
 
 By leveraging SQL and data visualization, the business can better understand performance, optimize operations, and drive revenue growth.
 
+**##Special Notice**
+## GitHub does not handle PDFs particularly well—**it mostly just accommodates them. Please note when you try to view it and it gives you an error, the file isn’t corrupted; it’s likely using certain fonts or characters that GitHub can’t properly display.**
+
+## Note:If you want to view the PDF file and got an error, you will need to download it first.
 ---
 📩 Contact
 Want to collaborate or have feedback?
